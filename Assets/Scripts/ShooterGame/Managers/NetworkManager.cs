@@ -8,7 +8,7 @@ namespace ShooterGame.Managers
         private const string LOBBY_VERSION = "v0.1-dev";
 
         private static readonly TypedLobby _defaultLobby = new TypedLobby(LOBBY_VERSION, LobbyType.Default);
-
+        
         public delegate void NetworkEvent();
 
         public event NetworkEvent Connected = () => { };
@@ -16,6 +16,7 @@ namespace ShooterGame.Managers
         public event NetworkEvent JoinedRoom = () => { };
 
         [SerializeField, UsedImplicitly] private PhotonLogLevel _logLevel = PhotonLogLevel.Informational;
+        [SerializeField, UsedImplicitly] private byte _maxPlayersPerRoom = 4;
 
         public void Awake()
         {
@@ -46,8 +47,10 @@ namespace ShooterGame.Managers
             this.JoinRoomFailed.Invoke();
 
             string roomName = string.Format("Room {0}", PhotonNetwork.GetRoomList().Length);
-            PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = 2 }, null);
+            PhotonNetwork.JoinOrCreateRoom(roomName, new RoomOptions { MaxPlayers = this._maxPlayersPerRoom }, null);
         }
+
+        
 
         public override void OnJoinedRoom()
         {
