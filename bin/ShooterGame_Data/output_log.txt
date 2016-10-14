@@ -1,0 +1,2644 @@
+Mono path[0] = 'S:/GitHub/superawesomegame/bin/ShooterGame_Data/Managed'
+Mono path[1] = 'S:/GitHub/superawesomegame/bin/ShooterGame_Data/Mono'
+Mono config path = 'S:/GitHub/superawesomegame/bin/ShooterGame_Data/Mono/etc'
+PlayerConnection initialized from S:/GitHub/superawesomegame/bin/ShooterGame_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55343
+Multi-casting "[IP] 192.168.0.7 [Port] 55343 [Flags] 2 [Guid] 2734110953 [EditorId] 2150422053 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-DT46QNI) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.0.7:55343]
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   NVIDIA
+    VRAM:     4058 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.125 seconds
+Platform assembly: S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: S:\GitHub\superawesomegame\bin\ShooterGame_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 144Hz; virtual: 3840x1080 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 0.740510 ms
+Init NetworkManager
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShooterGame.Managers.NetworkManager:Awake() (at S:\GitHub\superawesomegame\Assets\Scripts\ShooterGame\Managers\NetworkManager.cs:22)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Scripts/ShooterGame/Managers/NetworkManager.cs Line: 22)
+
+SwitchToProtocol: Udp PhotonNetwork.connected: False
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PhotonNetwork:SwitchToProtocol(ConnectionProtocol) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1172)
+PhotonNetwork:ConnectUsingSettings(String) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1219)
+ShooterGame.Managers.NetworkManager:Start() (at S:\GitHub\superawesomegame\Assets\Scripts\ShooterGame\Managers\NetworkManager.cs:32)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs Line: 1172)
+
+OnStatusChanged: Connect current State: ConnectingToNameServer
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnStatusChanged(StatusCode) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1920)
+ExitGames.Client.Photon.PeerBase:InitCallback()
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1920)
+
+Connected to NameServer.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnStatusChanged(StatusCode) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1928)
+ExitGames.Client.Photon.PeerBase:InitCallback()
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1928)
+
+OnStatusChanged: EncryptionEstablished current State: ConnectingToNameServer
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnStatusChanged(StatusCode) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1920)
+ExitGames.Client.Photon.<>c__DisplayClass148_0:<EnqueueStatusCallback>b__0()
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1920)
+
+OperationResponse 230: ReturnCode: 0.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1514)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1514)
+
+Received your UserID from server. Updating local value to: f1ab782e-d035-474d-8374-3bf7ec6c7c2f
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:DebugReturn(DebugLevel, String) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1491)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1621)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1491)
+
+OnStatusChanged: Disconnect current State: DisconnectingFromNameServer
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnStatusChanged(StatusCode) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1920)
+ExitGames.Client.Photon.EnetPeer:Disconnect()
+ExitGames.Client.Photon.PhotonPeer:Disconnect()
+NetworkingPeer:DisconnectToReconnect() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:802)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1644)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1920)
+
+OnStatusChanged: Connect current State: ConnectingToMasterserver
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnStatusChanged(StatusCode) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1920)
+ExitGames.Client.Photon.PeerBase:InitCallback()
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1920)
+
+Connected to masterserver.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnStatusChanged(StatusCode) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1949)
+ExitGames.Client.Photon.PeerBase:InitCallback()
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1949)
+
+OnStatusChanged: EncryptionEstablished current State: Authenticating
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnStatusChanged(StatusCode) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1920)
+ExitGames.Client.Photon.<>c__DisplayClass148_0:<EnqueueStatusCallback>b__0()
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1920)
+
+OnEvent: Event 226.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OperationResponse 230: ReturnCode: 0.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1514)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1514)
+
+Connected to server, joining lobby...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShooterGame.Managers.NetworkManager:OnConnectedToMaster() (at S:\GitHub\superawesomegame\Assets\Scripts\ShooterGame\Managers\NetworkManager.cs:37)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2601)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1660)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Scripts/ShooterGame/Managers/NetworkManager.cs Line: 37)
+
+Operation failed: OperationResponse 225: ReturnCode: 32760 (No match found). Parameters: {}
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1528)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1528)
+
+JoinRandom failed: No open game. Calling: OnPhotonRandomJoinFailed() and staying on master server.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1817)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1817)
+
+No open rooms, Creating new room...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShooterGame.Managers.NetworkManager:OnPhotonRandomJoinFailed(Object[])
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs:222)
+System.MonoType:InvokeMember(String, BindingFlags, Binder, Object, Object[], ParameterModifier[], CultureInfo, String[]) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/MonoType.cs:433)
+UnityEngine.SetupCoroutine:InvokeMember(Object, String, Object) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:31)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2601)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1824)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs Line: 222)
+
+OperationResponse 226: ReturnCode: 0.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1514)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1514)
+
+OnStatusChanged: Disconnect current State: DisconnectingFromMasterserver
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnStatusChanged(StatusCode) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1920)
+ExitGames.Client.Photon.EnetPeer:Disconnect()
+ExitGames.Client.Photon.PhotonPeer:Disconnect()
+NetworkingPeer:DisconnectToReconnect() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:806)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1798)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1920)
+
+OnStatusChanged: Connect current State: ConnectingToGameserver
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnStatusChanged(StatusCode) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1920)
+ExitGames.Client.Photon.PeerBase:InitCallback()
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1920)
+
+Connected to gameserver.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnStatusChanged(StatusCode) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1940)
+ExitGames.Client.Photon.PeerBase:InitCallback()
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1940)
+
+OnStatusChanged: EncryptionEstablished current State: ConnectedToGameserver
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnStatusChanged(StatusCode) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1920)
+ExitGames.Client.Photon.<>c__DisplayClass148_0:<EnqueueStatusCallback>b__0()
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1920)
+
+OperationResponse 230: ReturnCode: 0.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1514)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1514)
+
+OperationResponse 226: ReturnCode: 0.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1514)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1514)
+
+OnEvent: Event 255.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+Joined room Room 0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShooterGame.Managers.NetworkManager:OnJoinedRoom() (at S:\GitHub\superawesomegame\Assets\Scripts\ShooterGame\Managers\NetworkManager.cs:54)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2601)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2342)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Scripts/ShooterGame/Managers/NetworkManager.cs Line: 54)
+
+Registered PhotonView: 1001
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:RegisterPhotonView(PhotonView) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:3431)
+PhotonView:Awake() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonView.cs:257)
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:54)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:143)
+NetworkingPeer:DoInstantiate(Hashtable, PhotonPlayer, GameObject) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:3068)
+PhotonNetwork:Instantiate(String, Vector3, Quaternion, Int32, Object[]) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:2471)
+PhotonNetwork:Instantiate(String, Vector3, Quaternion, Int32) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:2415)
+ShooterGame.Managers.GameManager:SpawnPlayer() (at S:\GitHub\superawesomegame\Assets\Scripts\ShooterGame\Managers\GameManager.cs:23)
+ShooterGame.Managers.NetworkManager:OnJoinedRoom() (at S:\GitHub\superawesomegame\Assets\Scripts\ShooterGame\Managers\NetworkManager.cs:55)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2601)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2342)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 3431)
+
+OperationResponse 252: ReturnCode: 0.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnOperationResponse(OperationResponse) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1514)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1514)
+
+OnEvent: Event 255.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 202.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+Registered PhotonView: 2001
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:RegisterPhotonView(PhotonView) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:3431)
+PhotonView:Awake() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonView.cs:257)
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:54)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:143)
+NetworkingPeer:DoInstantiate(Hashtable, PhotonPlayer, GameObject) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:3068)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2399)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 3431)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 206.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 206.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 206.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 206.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 206.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 206.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 254.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+HandleEventLeave for player ID: 2 evLeave: Event 254: {(Byte)252=(Int32[])System.Int32[], (Byte)254=(Int32)2}
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:HandleEventLeave(Int32, EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1266)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2352)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1266)
+
+Network destroy Instantiated GO: Player(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:RemoveInstantiatedGO(GameObject, Boolean) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:3250)
+NetworkingPeer:DestroyPlayerObjects(Int32, Boolean) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:3151)
+NetworkingPeer:HandleEventLeave(Int32, EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1317)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2352)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 3250)
+
+OnEvent: Event 255.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 202.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+Registered PhotonView: 3001
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:RegisterPhotonView(PhotonView) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:3431)
+PhotonView:Awake() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonView.cs:257)
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:54)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:143)
+NetworkingPeer:DoInstantiate(Hashtable, PhotonPlayer, GameObject) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:3068)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2399)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 3431)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 206.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 206.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 206.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 206.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 206.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 201.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 206.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+OnEvent: Event 254.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2187)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 2187)
+
+HandleEventLeave for player ID: 3 evLeave: Event 254: {(Byte)252=(Int32[])System.Int32[], (Byte)254=(Int32)3}
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:HandleEventLeave(Int32, EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1266)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2352)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1266)
+
+Network destroy Instantiated GO: Player(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:RemoveInstantiatedGO(GameObject, Boolean) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:3250)
+NetworkingPeer:DestroyPlayerObjects(Int32, Boolean) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:3151)
+NetworkingPeer:HandleEventLeave(Int32, EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1317)
+NetworkingPeer:OnEvent(EventData) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2352)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:156)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 3250)
+
+OnStatusChanged: Disconnect current State: Disconnecting
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:OnStatusChanged(StatusCode) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1920)
+ExitGames.Client.Photon.EnetPeer:Disconnect()
+ExitGames.Client.Photon.PhotonPeer:Disconnect()
+NetworkingPeer:Disconnect() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:771)
+PhotonNetwork:Disconnect() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1567)
+PhotonHandler:OnApplicationQuit() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1920)
+
+Network destroy Instantiated GO: Player(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+NetworkingPeer:RemoveInstantiatedGO(GameObject, Boolean) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:3250)
+NetworkingPeer:LocalCleanupAnythingInstantiated(Boolean) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1113)
+NetworkingPeer:LeftRoomCleanup() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1078)
+NetworkingPeer:OnStatusChanged(StatusCode) (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2021)
+ExitGames.Client.Photon.EnetPeer:Disconnect()
+ExitGames.Client.Photon.PhotonPeer:Disconnect()
+NetworkingPeer:Disconnect() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:771)
+PhotonNetwork:Disconnect() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1567)
+PhotonHandler:OnApplicationQuit() (at S:\GitHub\superawesomegame\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
+ 
+(Filename: S:/GitHub/superawesomegame/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 3250)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 12f8 -> priority: 1 
