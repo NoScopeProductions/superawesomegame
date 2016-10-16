@@ -6,9 +6,9 @@ public class ProjectileDragging : MonoBehaviour
     public LineRenderer playerLineRenderer;
 
     private SpringJoint2D spring;
-    private Transform catapult;
+    private Transform player;
     private Ray rayToMouse;
-    private Ray leftCatapultToProjectile;
+    private Ray leftPlayerToProjectile;
     private float maxStretchSqr;
     private bool clickedOn;
     private Vector2 prevVelocity;
@@ -18,15 +18,15 @@ public class ProjectileDragging : MonoBehaviour
     {
         Debug.Log("Start");
         spring = GetComponent<SpringJoint2D>();
-        catapult = spring.connectedBody.transform;
+        player = spring.connectedBody.transform;
     }
 
     void Start()
     {
         Debug.Log("Start");
         LineRendererSetup();
-        rayToMouse = new Ray(catapult.position, Vector3.zero);
-        leftCatapultToProjectile = new Ray(playerLineRenderer.transform.position, Vector3.zero);
+        rayToMouse = new Ray(player.position, Vector3.zero);
+        leftPlayerToProjectile = new Ray(playerLineRenderer.transform.position, Vector3.zero);
         maxStretchSqr = maxStretch * maxStretch;
     }
 
@@ -85,7 +85,7 @@ public class ProjectileDragging : MonoBehaviour
     {
         Debug.Log("Dragging");
         Vector3 mouseWorldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 catapultToMouse = mouseWorldPoint - catapult.position;
+        Vector2 catapultToMouse = mouseWorldPoint - player.position;
 
         if (catapultToMouse.sqrMagnitude > maxStretchSqr)
         {
@@ -100,8 +100,8 @@ public class ProjectileDragging : MonoBehaviour
     void LineRendererUpdate()
     {
         Vector2 catapultToProjectile = transform.position - playerLineRenderer.transform.position;
-        leftCatapultToProjectile.direction = catapultToProjectile;
-        Vector3 holdPoint = leftCatapultToProjectile.GetPoint(catapultToProjectile.magnitude);
+        leftPlayerToProjectile.direction = catapultToProjectile;
+        Vector3 holdPoint = leftPlayerToProjectile.GetPoint(catapultToProjectile.magnitude);
         playerLineRenderer.SetPosition(1, holdPoint);
     }
 }
