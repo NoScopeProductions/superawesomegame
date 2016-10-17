@@ -1,36 +1,50 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
+using ShooterGame.Constants;
+using ShooterGame.Player;
 
-public enum HUDBarType
+namespace ShooterGame.Managers
 {
-    Health
-}
-
-public class HUD : MonoBehaviour {
-    [SerializeField] private BarScript _healthBar;
-    
-    public static HUD Instance { get; private set; }
-
-    void Awake()
+    public class HUD : MonoBehaviour
     {
-        if (!Instance)
-            Instance = this;
-        else if(Instance != this)
-            Destroy(gameObject);
+        [SerializeField]
+        private BarScript _healthBar, _shieldBar;
 
-        DontDestroyOnLoad(gameObject);
+        public static HUD Instance { get; private set; }
 
-        _healthBar = GetComponentsInChildren<BarScript>().First(bar => bar.BarType == HUDBarType.Health);
-    }
+        void Awake()
+        {
+            if (!Instance)
+                Instance = this;
+            else if (Instance != this)
+                Destroy(gameObject);
 
-    public void ShowHealth(float health, float maxHealth)
-    {
-        _healthBar.SetFillAmount(health/maxHealth);
-    }
+            DontDestroyOnLoad(gameObject);
 
-    public void ShowLoadout(Weapon primary, Weapon secondary)
-    {
-        
+            var barScripts = GetComponentsInChildren<BarScript>().ToDictionary(bar => bar.BarType);
+            _healthBar = barScripts[HUDBarType.Health];
+            _shieldBar = barScripts[HUDBarType.Shields];
+        }
+
+        public void ShowHealth(Stat health)
+        {
+            ShowStat(_healthBar, health);
+        }
+
+        public void ShowShields(Stat shields)
+        {
+            ShowStat(_shieldBar, shields);
+        }
+
+        private void ShowStat(BarScript statusBar, Stat status)
+        {
+            statusBar.SetFillAmount(status.Value / status.MaxValue);
+        }
+
+        public void ShowLoadout(Weapon primary, Weapon secondary)
+        {
+
+        }
     }
 }

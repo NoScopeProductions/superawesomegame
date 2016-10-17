@@ -1,6 +1,10 @@
-﻿public static class Inputs
+﻿namespace ShooterGame.Constants
 {
-    public const string
-        Temp_DecreaseHealth = "Temp Decrease Health",
-        Temp_IncreaseHealth = "Temp Increase Health";
+    public static class Inputs
+    {
+        public const string
+            Temp_TakeDamage = "Temp Take Damage",
+            Temp_Heal = "Temp Heal",
+            Temp_RecoverShields = "Temp Recover Shields";
+    }
 }

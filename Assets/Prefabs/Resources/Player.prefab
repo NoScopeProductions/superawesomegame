@@ -20,11 +20,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000014210925380}
   - 114: {fileID: 114000010640797852}
-  - 114: {fileID: 114000011684440246}
   - 61: {fileID: 61000011875165432}
   - 50: {fileID: 50000010357732224}
   - 114: {fileID: 114000013469384416}
   - 114: {fileID: 114000011882608808}
+  - 114: {fileID: 114000011257014852}
   m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
@@ -172,7 +172,7 @@ MonoBehaviour:
   _maximumClimbAngle: 30
   _isGrounded: 0
   _isOnSlope: 0
---- !u!114 &114000011684440246
+--- !u!114 &114000011257014852
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -183,7 +183,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0d8653802745724da35c30ff9cfb3ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 100
+  _health:
+    _value: 100
+    _maxValue: 100
+  _shields:
+    _value: 100
+    _maxValue: 100
 --- !u!114 &114000011882608808
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1,5 +1,11 @@
-﻿public interface IDestructible
+﻿using ShooterGame.Player;
+
+namespace ShooterGame.Interfaces
 {
-    float Health { get; }
-    void TakeDamage(float amount, PlayerStats attacker);
+    public interface IDestructible
+    {
+        float Health { get; }
+        float MaxHealth { get; }
+        void TakeDamage(float amount, PlayerStats attacker);
+    }
 }

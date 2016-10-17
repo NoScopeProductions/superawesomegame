@@ -326,7 +326,7 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Temp Decrease Health
+    m_Name: Temp Take Damage
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -342,11 +342,27 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Temp Increase Health
+    m_Name: Temp Heal
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: x
+    altNegativeButton: 
+    altPositiveButton: joystick button 1
+    gravity: 1000
+    dead: 0.001
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 0
+  - serializedVersion: 3
+    m_Name: Temp Recover Shields
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: c
     altNegativeButton: 
     altPositiveButton: joystick button 1
     gravity: 1000
