@@ -1,18 +1,20 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
-using System.Linq;
-using ShooterGame.Constants;
+using JetBrains.Annotations;
 using ShooterGame.Player;
+using UnityEngine.UI;
 
 namespace ShooterGame.Managers
 {
     public class HUD : MonoBehaviour
     {
-        [SerializeField]
+        [SerializeField, UsedImplicitly]
         private BarScript _healthBar, _shieldBar;
+
+        [SerializeField] private Text _wind;
 
         public static HUD Instance { get; private set; }
 
+        [UsedImplicitly]
         void Awake()
         {
             if (!Instance)
@@ -21,10 +23,6 @@ namespace ShooterGame.Managers
                 Destroy(gameObject);
 
             DontDestroyOnLoad(gameObject);
-
-            var barScripts = GetComponentsInChildren<BarScript>().ToDictionary(bar => bar.BarType);
-            _healthBar = barScripts[HUDBarType.Health];
-            _shieldBar = barScripts[HUDBarType.Shields];
         }
 
         public void ShowHealth(Stat health)
@@ -45,6 +43,12 @@ namespace ShooterGame.Managers
         public void ShowLoadout(Weapon primary, Weapon secondary)
         {
 
+        }
+
+        public void ShowWind(Vector2 direction)
+        {
+            float speed = Mathf.Abs(direction.magnitude);
+            _wind.text = string.Format("{0:n1} ({1:n2}, {2:n2})", speed, direction.x, direction.y);
         }
     }
 }

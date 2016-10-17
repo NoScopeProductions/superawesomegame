@@ -7,24 +7,12 @@ namespace ShooterGame.Managers
 {
     public class BarScript : MonoBehaviour
     {
-        [SerializeField]
-        private HUDBarType _barType;
-
-        [SerializeField]
-        private float _fillAmount = 1f;
-        [SerializeField]
-        private Image _bar;
+        [SerializeField] private HUDBarType _barType;
+        [SerializeField] private float _fillAmount = 1f;
+        [SerializeField] private Image _bar;
 
         public HUDBarType BarType { get { return _barType; } }
-
         public float FillAmount { get { return _fillAmount; } }
-
-        // Use this for initialization
-        [UsedImplicitly]
-        void Start()
-        {
-
-        }
 
         // Update is called once per frame
         [UsedImplicitly]

@@ -445,10 +445,15 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114000011382005124, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd,
+    - target: {fileID: 114000010658662394, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd,
         type: 2}
-      propertyPath: _barType
-      value: 1
+      propertyPath: m_Text
+      value: Wind Speed (Direction)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010658662394, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd, type: 2}
@@ -606,6 +611,7 @@ GameObject:
   - 4: {fileID: 764143192}
   - 114: {fileID: 764143193}
   - 114: {fileID: 764143194}
+  - 114: {fileID: 764143195}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -648,6 +654,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e94d3ae1ef273f74c943a4be8b714c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &764143195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764143191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91473c3e9a756744fa1f466bacd93204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &765800786
