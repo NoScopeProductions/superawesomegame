@@ -34,6 +34,7 @@ namespace ShooterGame.Player
         private Transform _spriteTransform;
         private BoxCollider2D _collider;
         private Rigidbody2D _rigidbody;
+        private PlayerStats _stats;
 
         //private float _xMax = float.MaxValue;
         //private float _yMax = float.MaxValue; //might not need since there is no vertical movement
@@ -90,6 +91,7 @@ namespace ShooterGame.Player
             this._rigidbody = this.GetComponent<Rigidbody2D>();
 
             this._spriteTransform = this.GetComponentsInChildren<Transform>().First(t => t.name == "SpriteGraphics");
+            _stats = GetComponent<PlayerStats>();
         }
 
         private void Update()
