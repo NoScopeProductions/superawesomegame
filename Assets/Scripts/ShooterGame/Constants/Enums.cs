@@ -1,6 +1,6 @@
 ﻿namespace ShooterGame.Constants
 {
-    public enum HUDBarType
+    public enum HudBarType
     {
         Health,
         Shields,

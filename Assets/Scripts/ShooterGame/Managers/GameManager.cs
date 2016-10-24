@@ -1,4 +1,5 @@
-﻿using ShooterGame.Constants;
+﻿using ShooterGame.Camera;
+using ShooterGame.Constants;
 using ShooterGame.Player;
 using UnityEngine;
 
@@ -13,6 +14,12 @@ namespace ShooterGame.Managers
             get { return this._networkManager ?? (this._networkManager = this.GetComponent<NetworkManager>()); }
         }
 
+        private SmoothFollowCamera _mainCamera;
+        private SmoothFollowCamera MainCamera
+        {
+            get { return this._mainCamera ?? (this._mainCamera = UnityEngine.Camera.main.GetComponent<SmoothFollowCamera>()); }
+        }
+
         public void Awake()
         {
             this.NetworkManager.JoinedRoom += this.SpawnPlayer;
@@ -20,7 +27,9 @@ namespace ShooterGame.Managers
 
         private void SpawnPlayer()
         {
-            PhotonNetwork.Instantiate(PrefabNames.PLAYER, Vector3.zero, Quaternion.identity, 0);
+            var player = PhotonNetwork.Instantiate(PrefabNames.PLAYER, Vector3.zero, Quaternion.identity, 0);
+
+            this.MainCamera.Target = player.transform;
         }
     }
 }

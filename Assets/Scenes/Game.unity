@@ -101,7 +101,7 @@ GameObject:
   - 33: {fileID: 36335297}
   - 23: {fileID: 36335296}
   - 61: {fileID: 36335295}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   - 33: {fileID: 94750067}
   - 23: {fileID: 94750066}
   - 61: {fileID: 94750065}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,6 +265,7 @@ GameObject:
   - 124: {fileID: 353381814}
   - 81: {fileID: 353381813}
   - 45: {fileID: 353381818}
+  - 114: {fileID: 353381819}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -313,7 +314,7 @@ Camera:
   far clip plane: 50
   field of view: 60
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -348,6 +349,19 @@ Skybox:
   m_GameObject: {fileID: 353381812}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: 6c5d8529c95f9b14aba8d12ab383f471, type: 2}
+--- !u!114 &353381819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 353381812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb1015aa79638c49b116cc1901d1ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _smoothDampTime: 0.2
+  _cameraOffset: {x: 0, y: -3, z: 2}
 --- !u!1 &479969145
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,7 +373,7 @@ GameObject:
   - 33: {fileID: 479969148}
   - 23: {fileID: 479969147}
   - 61: {fileID: 479969146}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644ce121295a0b847b52e18897e20360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _logLevel: 1
+  _logLevel: 0
+  _maxPlayersPerRoom: 4
 --- !u!114 &764143194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,7 +508,7 @@ GameObject:
   - 33: {fileID: 765800789}
   - 23: {fileID: 765800788}
   - 61: {fileID: 765800787}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,7 +589,7 @@ GameObject:
   - 33: {fileID: 1096785106}
   - 23: {fileID: 1096785105}
   - 61: {fileID: 1096785104}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +670,7 @@ GameObject:
   - 33: {fileID: 1292473240}
   - 23: {fileID: 1292473239}
   - 61: {fileID: 1292473238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -736,7 +751,7 @@ GameObject:
   - 33: {fileID: 1450216306}
   - 23: {fileID: 1450216305}
   - 61: {fileID: 1450216304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -814,7 +829,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1730344858}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -853,7 +868,7 @@ GameObject:
   - 33: {fileID: 1981169526}
   - 23: {fileID: 1981169525}
   - 61: {fileID: 1981169524}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

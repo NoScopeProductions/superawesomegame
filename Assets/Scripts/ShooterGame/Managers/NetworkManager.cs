@@ -7,8 +7,6 @@ namespace ShooterGame.Managers
     {
         private const string LOBBY_VERSION = "v0.1-dev";
 
-        private static readonly TypedLobby _defaultLobby = new TypedLobby(LOBBY_VERSION, LobbyType.Default);
-        
         public delegate void NetworkEvent();
 
         public event NetworkEvent Connected = () => { };

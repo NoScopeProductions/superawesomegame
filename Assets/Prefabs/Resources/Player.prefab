@@ -19,13 +19,14 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000014210925380}
-  - 114: {fileID: 114000010640797852}
   - 61: {fileID: 61000011875165432}
   - 50: {fileID: 50000010357732224}
   - 114: {fileID: 114000013469384416}
   - 114: {fileID: 114000011882608808}
   - 114: {fileID: 114000011257014852}
-  m_Layer: 2
+  - 114: {fileID: 114000010583553854}
+  - 114: {fileID: 114000013308319040}
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 4476612413928447662, guid: 0000000000000000d000000000000000, type: 0}
@@ -43,7 +44,7 @@ GameObject:
   - 33: {fileID: 33000011831361578}
   - 64: {fileID: 64000010419846544}
   - 23: {fileID: 23000010229766014}
-  m_Layer: 2
+  m_Layer: 9
   m_Name: SpriteGraphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +157,7 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114000010640797852
+--- !u!114 &114000010583553854
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -164,21 +165,47 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000012140688012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43eec08273052c848a28370b6c574522, type: 3}
+  m_Script: {fileID: 11500000, guid: 81d5a06c14d8b814385ba4a2f049af40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _velocity: {x: 0, y: 0}
-  _rayCount: 8
-  _maximumClimbAngle: 30
-  _isGrounded: 0
-  _isOnSlope: 0
+  _ignoreOneWayPlatformsThisFrame: 0
+  _skinWidth: 0.02
+  _platformMask:
+    serializedVersion: 2
+    m_Bits: 256
+  _triggerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _oneWayPlatformMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _slopeLimit: 60
+  _jumpingThreshold: 0.07
+  _slopeSpeedMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  _totalHorizontalRays: 8
+  _totalVerticalRays: 4
 --- !u!114 &114000011257014852
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012140688012}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0d8653802745724da35c30ff9cfb3ed, type: 3}
   m_Name: 
@@ -250,6 +277,21 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &114000013308319040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012140688012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43eec08273052c848a28370b6c574522, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gravity: -25
+  _runSpeed: 4
+  _groundDamping: 20
+  _inAirDamping: 5
 --- !u!114 &114000013469384416
 MonoBehaviour:
   m_ObjectHideFlags: 1

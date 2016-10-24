@@ -50,13 +50,13 @@ public static class Extensions
     /// <summary>compares the squared magnitude of target - second to given float value</summary>
     public static bool AlmostEquals(this Vector3 target, Vector3 second, float sqrMagnitudePrecision)
     {
-        return (target - second).sqrMagnitude < sqrMagnitudePrecision;  // TODO: inline vector methods to optimize?
+        return (target - second).sqrMagnitude < sqrMagnitudePrecision;  
     }
 
     /// <summary>compares the squared magnitude of target - second to given float value</summary>
     public static bool AlmostEquals(this Vector2 target, Vector2 second, float sqrMagnitudePrecision)
     {
-        return (target - second).sqrMagnitude < sqrMagnitudePrecision;  // TODO: inline vector methods to optimize?
+        return (target - second).sqrMagnitude < sqrMagnitudePrecision;  
     }
 
     /// <summary>compares the angle between target and second to given float value</summary>
@@ -160,7 +160,7 @@ public static class Extensions
     public static void StripKeysWithNullValues(this IDictionary original)
     {
         object[] keys = new object[original.Count];
-        //original.Keys.CopyTo(keys, 0);                // todo: figure out which platform didn't support this
+        //original.Keys.CopyTo(keys, 0);                
         int i = 0;
         foreach (object k in original.Keys)
         {
