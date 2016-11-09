@@ -1,4 +1,5 @@
 ﻿using ShooterGame.Player;
+using UnityEngine;
 
 namespace ShooterGame.Interfaces
 {
@@ -10,6 +11,6 @@ namespace ShooterGame.Interfaces
         /// <summary>
         /// return true if health is dropped to 0
         /// </summary>
-        void TakeDamage(float amount, PlayerStats attacker);
+        void TakeDamage(float amount, PlayerStats attacker, Vector2 pointOfContact);
     }
 }

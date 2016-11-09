@@ -47,7 +47,7 @@ namespace ShooterGame.Player
         void HandleTestInputs()
         {
             if (Input.GetButtonDown(Inputs.Temp_TakeDamage))
-                TakeDamage(10, this);
+                TakeDamage(10, this, transform.position);
 
             if (Input.GetButtonDown(Inputs.Temp_Heal))
                 Heal(10, this);
@@ -79,16 +79,16 @@ namespace ShooterGame.Player
 
         void AttackWithPrimary(IDestructible target)
         {
-            target.TakeDamage(_primary.AttackPower, this);
+            target.TakeDamage(_primary.AttackPower, this, transform.position);
         }
 
         void AttackWithSecondary(IDestructible target)
         {
-            target.TakeDamage(_primary.AttackPower, this);
+            target.TakeDamage(_secondary.AttackPower, this, transform.position);
         }
 
         #region IDestructible implementation
-        public void TakeDamage(float amount, PlayerStats attacker)
+        public void TakeDamage(float amount, PlayerStats attacker, Vector2 pointOfContact)
         {
             float damageAfterShields = _shields.Value - amount;
 

@@ -8,6 +8,12 @@ namespace ShooterGame.Managers
     [RequireComponent(typeof(NetworkManager))]
     public class GameManager : MonoBehaviour
     {
+        public delegate void TurnUpdateEvent();
+
+        public TurnUpdateEvent OnTurnUpdate = () => { };
+
+        public static GameManager Instance { get; private set; }
+
         private NetworkManager _networkManager;
         private NetworkManager NetworkManager
         {
@@ -23,6 +29,15 @@ namespace ShooterGame.Managers
         public void Awake()
         {
             this.NetworkManager.JoinedRoom += this.SpawnPlayer;
+            Instance = this;
+        }
+
+        void Update()
+        {
+            if (Time.frameCount % 144 == 0)
+            {
+                OnTurnUpdate();
+            }
         }
 
         private void SpawnPlayer()
