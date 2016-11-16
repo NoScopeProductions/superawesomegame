@@ -5,12 +5,18 @@ using UnityEngine;
 namespace ShooterGame.Player
 {
     [Serializable]
-    public class Stat
+    public struct Stat
     {
         [SerializeField, UsedImplicitly] private float _value, _maxValue;
 
         public float Value { get { return _value; } }
         public float MaxValue { get { return _maxValue; } }
+
+        public Stat(float value, float maxValue)
+        {
+            _value = value;
+            _maxValue = maxValue;
+        }
 
         public void SetValue(float value)
         {

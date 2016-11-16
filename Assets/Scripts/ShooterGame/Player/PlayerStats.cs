@@ -5,25 +5,28 @@ using ShooterGame.Interfaces;
 using ShooterGame.Managers;
 using ShooterGame.Player.StatusEffects;
 using System.Collections.Generic;
+using ShooterGame.UI;
 
 namespace ShooterGame.Player
 {
-    public class PlayerStats : MonoBehaviour, IDestructible
+    public class PlayerStats : ADestructible
     {
-        [SerializeField] private Stat _health, _shields;
+        [SerializeField] private Stat _shields;
+        [SerializeField] private StatusDisplay _statusDisplay;
 
         private Weapon _primary, _secondary;
         private HUD _hud;
-        private List<StatusEffectBase> _statusEffects;
 
-        public Stat Health            { get { return _health;    } }
+        private readonly List<StatusEffectBase> _statusEffects = new List<StatusEffectBase>();
+
+        public Stat   Shields         { get { return _shields;   } }
         public Weapon PrimaryWeapon   { get { return _primary;   } }
         public Weapon SecondaryWeapon { get { return _secondary; } }
 
         [UsedImplicitly]
         void Awake()
         {
-            _statusEffects = new List<StatusEffectBase>();
+            GameManager.Instance.OnTurnUpdate += TurnUpdate;
         }
 
         [UsedImplicitly]
@@ -33,13 +36,18 @@ namespace ShooterGame.Player
         }
 
         [UsedImplicitly]
+        void OnDestroy()
+        {
+            GameManager.Instance.OnTurnUpdate -= TurnUpdate;
+        }
+
+        [UsedImplicitly]
         void Update()
         {
             HandleTestInputs();
-            TurnUpdate(); //will eventually be called once per turn instead of once per frame
 
-            _hud.ShowHealth(_health);
-            _hud.ShowShields(_shields);
+            _statusDisplay.ShowHealth(_health);
+            _statusDisplay.ShowShields(_shields);
             _hud.ShowLoadout(_primary, _secondary);
         }
 
@@ -79,17 +87,18 @@ namespace ShooterGame.Player
 
         void AttackWithPrimary(IDestructible target)
         {
-            target.TakeDamage(_primary.AttackPower, this, transform.position);
+            _primary.Attack(target, this);
         }
 
         void AttackWithSecondary(IDestructible target)
         {
-            target.TakeDamage(_secondary.AttackPower, this, transform.position);
+            _secondary.Attack(target, this);
         }
 
         #region IDestructible implementation
-        public void TakeDamage(float amount, PlayerStats attacker, Vector2 pointOfContact)
+        public override void TakeDamage(float amount, PlayerStats attacker, Vector2 pointOfContact)
         {
+            Debug.Log("Taking Damage");
             float damageAfterShields = _shields.Value - amount;
 
             if(_shields.Value > 0)

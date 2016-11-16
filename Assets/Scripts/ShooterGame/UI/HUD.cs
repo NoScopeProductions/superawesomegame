@@ -3,17 +3,14 @@ using JetBrains.Annotations;
 using ShooterGame.Player;
 using UnityEngine.UI;
 
-namespace ShooterGame.Managers
+namespace ShooterGame.UI
 {
     public class HUD : MonoBehaviour
     {
-        [SerializeField, UsedImplicitly]
-        private BarScript _healthBar, _shieldBar;
-
         [SerializeField] private Text _wind;
 
         public static HUD Instance { get; private set; }
-
+        
         [UsedImplicitly]
         void Awake()
         {
@@ -23,21 +20,6 @@ namespace ShooterGame.Managers
                 Destroy(gameObject);
 
             DontDestroyOnLoad(gameObject);
-        }
-
-        public void ShowHealth(Stat health)
-        {
-            ShowStat(_healthBar, health);
-        }
-
-        public void ShowShields(Stat shields)
-        {
-            ShowStat(_shieldBar, shields);
-        }
-
-        private void ShowStat(BarScript statusBar, Stat status)
-        {
-            statusBar.SetFillAmount(status.Value / status.MaxValue);
         }
 
         public void ShowLoadout(Weapon primary, Weapon secondary)
