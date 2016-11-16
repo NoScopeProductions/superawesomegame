@@ -44,6 +44,7 @@ namespace ShooterGame.Managers
         {
             var player = PhotonNetwork.Instantiate(PrefabNames.PLAYER, Vector3.zero, Quaternion.identity, 0);
 
+            player.layer = (int) Layer.Player;
             this.MainCamera.Target = player.transform;
         }
     }

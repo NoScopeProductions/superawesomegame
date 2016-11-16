@@ -48,7 +48,6 @@ namespace ShooterGame.Player
                 this._normalizedHorizontalSpeed = 0;
             }
 
-            // apply horizontal speed smoothing it. dont really do this with Lerp. Use SmoothDamp or something that provides more control
             var smoothedMovementFactor = this._controller.IsGrounded ? this._groundDamping : this._inAirDamping; // how fast do we change direction?
             this._velocity.x = Mathf.Lerp(this._velocity.x, this._normalizedHorizontalSpeed * this._runSpeed, Time.deltaTime * smoothedMovementFactor);
 
