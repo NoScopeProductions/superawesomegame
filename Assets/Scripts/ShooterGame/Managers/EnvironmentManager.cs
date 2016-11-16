@@ -1,11 +1,10 @@
-﻿using System;
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
+using ShooterGame.UI;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace ShooterGame.Managers
 {
-    public enum WeatherState : int
+    public enum WeatherState
     {
         Clear     = 50, //50% chance
         LightRain = 67, //~16%
@@ -23,7 +22,6 @@ namespace ShooterGame.Managers
     {
         private Vector2 _windDirection;
         private HUD _hud;
-        private GameManager _gm;
 
         private WeatherState _weather;
         private TimeOfDay _timeOfDay;
@@ -31,6 +29,7 @@ namespace ShooterGame.Managers
         [UsedImplicitly]
         void Awake()
         {
+            GameManager.Instance.OnTurnUpdate += TurnUpdate;
             _weather = GenerateWeather();
         }
 
@@ -39,8 +38,6 @@ namespace ShooterGame.Managers
         void Start()
         {
             _hud = HUD.Instance;
-            _gm = GameManager.Instance;
-            _gm.OnTurnUpdate += TurnUpdate;
         }
 
         void TurnUpdate()
@@ -51,7 +48,7 @@ namespace ShooterGame.Managers
         void UpdateWind()
         {
             float x = Random.Range(-1f, 1f);
-            float y = Random.Range(-1f, 1f);
+            float y = x * x * Random.Range(-.5f, .5f);
 
             _windDirection = new Vector2(x, y);
 
@@ -73,7 +70,5 @@ namespace ShooterGame.Managers
             else
                 return WeatherState.Snow;
         }
-        
-        
     }
 }
