@@ -219,6 +219,7 @@ MonoBehaviour:
   _shields:
     _value: 100
     _maxValue: 100
+  _statusDisplay: {fileID: 0}
 --- !u!114 &114000011564977160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -230,6 +231,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee8770bcaf499b4c8bdd0880f9a257c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InputCooldown: 0.08
+  _minAngle: 0
+  _maxAngle: 90
+  _angle: 0
 --- !u!114 &114000011882608808
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -302,6 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d52373a33cdcc549b59299031c434d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _power: 0
 --- !u!114 &114000013308319040
 MonoBehaviour:
   m_ObjectHideFlags: 1
