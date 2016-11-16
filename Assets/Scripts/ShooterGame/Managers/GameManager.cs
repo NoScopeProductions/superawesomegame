@@ -1,6 +1,7 @@
 ﻿using ShooterGame.Camera;
 using ShooterGame.Constants;
 using ShooterGame.Player;
+using ShooterGame.UI;
 using UnityEngine;
 
 namespace ShooterGame.Managers
@@ -36,6 +37,7 @@ namespace ShooterGame.Managers
         {
             if (Time.frameCount % 144 == 0)
             {
+                Debug.Log("Turn Update");
                 OnTurnUpdate();
             }
         }
@@ -43,6 +45,7 @@ namespace ShooterGame.Managers
         private void SpawnPlayer()
         {
             var player = PhotonNetwork.Instantiate(PrefabNames.PLAYER, Vector3.zero, Quaternion.identity, 0);
+            HUD.Instance.TrackPlayerStatus(player.GetComponent<PlayerStats>());
 
             player.layer = (int) Layer.Player;
             this.MainCamera.Target = player.transform;

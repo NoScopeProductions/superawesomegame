@@ -29,7 +29,6 @@ namespace ShooterGame.Managers
         [UsedImplicitly]
         void Awake()
         {
-            GameManager.Instance.OnTurnUpdate += TurnUpdate;
             _weather = GenerateWeather();
         }
 
@@ -37,6 +36,7 @@ namespace ShooterGame.Managers
         [UsedImplicitly]
         void Start()
         {
+            GameManager.Instance.OnTurnUpdate += TurnUpdate;
             _hud = HUD.Instance;
         }
 

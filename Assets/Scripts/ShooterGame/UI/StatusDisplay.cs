@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using JetBrains.Annotations;
 using ShooterGame.Player;
 
@@ -10,19 +9,29 @@ namespace ShooterGame.UI
         [SerializeField, UsedImplicitly]
         private BarScript _healthBar, _shieldBar;
 
+        private PlayerStats _player;
+
+        [UsedImplicitly]
+        void Update()
+        {
+            TrackPlayer();
+            ShowStat(_healthBar, _player.Health);
+            ShowStat(_shieldBar, _player.Shields);
+        }
+
         private void ShowStat(BarScript statusBar, Stat status)
         {
             statusBar.SetFillAmount(status.Value / status.MaxValue);
         }
 
-        public void ShowHealth(Stat health)
+        public void AttachToPlayer(PlayerStats player)
         {
-            ShowStat(_healthBar, health);
+            _player = player;
         }
 
-        public void ShowShields(Stat shields)
+        private void TrackPlayer()
         {
-            ShowStat(_shieldBar, shields);
+            transform.position = _player.transform.position + Vector3.up * 1.5f;
         }
     }
 }

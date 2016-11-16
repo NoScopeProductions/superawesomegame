@@ -11,14 +11,17 @@ namespace ShooterGame.Player
 {
     public class PlayerStats : ADestructible
     {
+        public delegate void PlayerStatsEvent(PlayerStats playerStats);
+
+        public PlayerStatsEvent OnDie, OnTakeDamage, OnHeal;
+
         [SerializeField] private Stat _shields;
-        [SerializeField] private StatusDisplay _statusDisplay;
 
         private Weapon _primary, _secondary;
         private HUD _hud;
 
         private readonly List<StatusEffectBase> _statusEffects = new List<StatusEffectBase>();
-
+        
         public Stat   Shields         { get { return _shields;   } }
         public Weapon PrimaryWeapon   { get { return _primary;   } }
         public Weapon SecondaryWeapon { get { return _secondary; } }
@@ -26,12 +29,12 @@ namespace ShooterGame.Player
         [UsedImplicitly]
         void Awake()
         {
-            GameManager.Instance.OnTurnUpdate += TurnUpdate;
         }
 
         [UsedImplicitly]
         void Start()
         {
+            GameManager.Instance.OnTurnUpdate += TurnUpdate;
             _hud = HUD.Instance;
         }
 
@@ -45,9 +48,6 @@ namespace ShooterGame.Player
         void Update()
         {
             HandleTestInputs();
-
-            _statusDisplay.ShowHealth(_health);
-            _statusDisplay.ShowShields(_shields);
             _hud.ShowLoadout(_primary, _secondary);
         }
 
@@ -125,6 +125,7 @@ namespace ShooterGame.Player
         private void Die()
         {
             Debug.Log("He's dead, Jim.");
+            OnDie(this);
             Destroy(gameObject);
         }
     }
