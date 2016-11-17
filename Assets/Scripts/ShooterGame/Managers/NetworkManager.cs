@@ -18,7 +18,6 @@ namespace ShooterGame.Managers
 
         public void Awake()
         {
-            Debug.Log("Init NetworkManager");
 
             PhotonNetwork.logLevel = this._logLevel;
 
@@ -33,7 +32,6 @@ namespace ShooterGame.Managers
 
         public override void OnConnectedToMaster()
         {
-            Debug.Log("Connected to server, joining lobby...");
             this.Connected.Invoke();
 
             PhotonNetwork.JoinRandomRoom();
@@ -41,7 +39,6 @@ namespace ShooterGame.Managers
 
         public override void OnPhotonRandomJoinFailed(object[] codeAndMsg)
         {
-            Debug.Log("No open rooms, Creating new room...");
             this.JoinRoomFailed.Invoke();
 
             string roomName = string.Format("Room {0}", PhotonNetwork.GetRoomList().Length);
@@ -52,7 +49,6 @@ namespace ShooterGame.Managers
 
         public override void OnJoinedRoom()
         {
-            Debug.Log("Joined room " + PhotonNetwork.room.name);
             this.JoinedRoom.Invoke();
         }
     }

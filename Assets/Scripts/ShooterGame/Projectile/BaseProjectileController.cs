@@ -1,5 +1,6 @@
 ﻿using Photon;
 using ShooterGame.Extensions;
+using ShooterGame.Managers;
 using UnityEngine;
 
 namespace ShooterGame.Projectile
@@ -26,9 +27,11 @@ namespace ShooterGame.Projectile
 
         public void Shoot(Vector2 direction, float power)
         {
-            //TODO: Use Physics for now..
-            
             this._rigidbody.AddForce(direction * power * POWER_CONSTANT, ForceMode2D.Impulse);
+
+            var constForce = this.gameObject.AddComponent<ConstantForce2D>();
+
+            constForce.force = EnvironmentManager.Instance.WindForce * Time.deltaTime * 60;
         }
 
         private void Update()

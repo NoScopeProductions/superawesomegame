@@ -1,74 +1,51 @@
-﻿using JetBrains.Annotations;
-using ShooterGame.UI;
+﻿using ShooterGame.UI;
 using UnityEngine;
 
 namespace ShooterGame.Managers
 {
-    public enum WeatherState
-    {
-        Clear     = 50, //50% chance
-        LightRain = 67, //~16%
-        HeavyRain = 84, //~16%
-        Snow      = 100 //~16%
-    }
-
-    public enum TimeOfDay
-    {
-        Day = 75,
-        Night = 100
-    }
-
     public class EnvironmentManager : MonoBehaviour
     {
-        private Vector2 _windDirection;
+        public static EnvironmentManager Instance { get; private set; }
+
+        private const float MAX_WIND_FORCE = 15f;
+
+        public Vector2 WindForce { get; private set; }
+
         private HUD _hud;
 
-        private WeatherState _weather;
-        private TimeOfDay _timeOfDay;
-
-        [UsedImplicitly]
-        void Awake()
+        private void Awake()
         {
-            _weather = GenerateWeather();
+            if (!Instance)
+                Instance = this;
+            else if (Instance != this)
+                Destroy(this.gameObject);
+
+            DontDestroyOnLoad(this.gameObject);
         }
 
-        // Use this for initialization
-        [UsedImplicitly]
-        void Start()
+        private void Start()
         {
-            GameManager.Instance.OnTurnUpdate += TurnUpdate;
-            _hud = HUD.Instance;
+            this._hud = HUD.Instance;
+            this.UpdateWind();
         }
 
-        void TurnUpdate()
+        private void Update()
         {
-            UpdateWind();
+            if (Input.GetKeyDown(KeyCode.Keypad5))
+            {
+                this.UpdateWind();
+            }
         }
 
-        void UpdateWind()
+        private void UpdateWind()
         {
-            float x = Random.Range(-1f, 1f);
-            float y = x * x * Random.Range(-.5f, .5f);
+            this.WindForce = Random.insideUnitCircle.normalized;
 
-            _windDirection = new Vector2(x, y);
+            this.WindForce *= (int)Random.Range(0, MAX_WIND_FORCE);
 
-            Debug.Log(_windDirection);
-            _hud.ShowWind(_windDirection);
+            this._hud.ShowWind(this.WindForce);
         }
 
-        WeatherState GenerateWeather()
-        {
-            //there has to be a fancier way to do this
-            int state = Random.Range(0, 100);
-
-            if (state <= (int) WeatherState.Clear)
-                return WeatherState.Clear;
-            else if (state <= (int) WeatherState.LightRain)
-                return WeatherState.LightRain;
-            else if (state <= (int) WeatherState.HeavyRain)
-                return WeatherState.HeavyRain;
-            else
-                return WeatherState.Snow;
-        }
+      
     }
 }

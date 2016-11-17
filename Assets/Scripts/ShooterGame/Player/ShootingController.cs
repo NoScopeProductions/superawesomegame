@@ -57,7 +57,7 @@ namespace ShooterGame.Player
             Debug.Log("Fire with power: " + power + " and angle: " + angle + "!");
 
 
-            var direction = Vector2.right.Rotate(angle);
+            var direction = Vector2.right.Rotate(angle).normalized;
 
             //TODO: set projectile position based on sprite/gun position
             var projectilePosition = this.transform.position + Vector3.up;
