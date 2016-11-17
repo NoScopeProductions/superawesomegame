@@ -853,6 +853,10 @@ Prefab:
       propertyPath: m_PlaneDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010890575826, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd, type: 2}
+      propertyPath: m_Name
+      value: WindIndicator
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000012095178360, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd, type: 2}
