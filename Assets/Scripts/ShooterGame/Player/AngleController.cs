@@ -21,65 +21,65 @@ namespace ShooterGame.Player
 
         public int Angle
         {
-            get { return _angle; }
-            private set { _angle = value; }
+            get { return this._angle; }
+            private set { this._angle = value; }
         }
 
         void Start()
         {
-            Angle = (_maxAngle - _minAngle) / 2 + _minAngle;
+            this.Angle = (this._maxAngle - this._minAngle) / 2 + this._minAngle;
         }
 
         void Update()
         {
             if (this.photonView.isMine == false && PhotonNetwork.connected) return;
-            CheckInput();
-            DecreaseInputCooldown();
+            this.CheckInput();
+            this.DecreaseInputCooldown();
         }
 
         private void DecreaseInputCooldown()
         {
-            CurrentCooldown -= Time.deltaTime;
-            if (CurrentCooldown <= 0)
+            this.CurrentCooldown -= Time.deltaTime;
+            if (this.CurrentCooldown <= 0)
             {
-                CurrentCooldown = 0f;
+                this.CurrentCooldown = 0f;
             }
         }
 
         private void CheckInput()
         {
-            if (CurrentCooldown <= 0f)
+            if (this.CurrentCooldown <= 0f)
             {
                 if (Input.GetKey(KeyCode.UpArrow))
                 {
-                    IncreaseAngle();
-                    CurrentCooldown = InputCooldown;
+                    this.IncreaseAngle();
+                    this.CurrentCooldown = this.InputCooldown;
                 }
                 else if (Input.GetKey(KeyCode.DownArrow))
                 {
-                    DecreaseAngle();
-                    CurrentCooldown = InputCooldown;
+                    this.DecreaseAngle();
+                    this.CurrentCooldown = this.InputCooldown;
                 }
             }
         }
 
         private void IncreaseAngle()
         {
-            Angle++;
+            this.Angle++;
 
-            if (Angle > _maxAngle)
+            if (this.Angle > this._maxAngle)
             {
-                Angle = _maxAngle;
+                this.Angle = this._maxAngle;
             }
         }
 
         private void DecreaseAngle()
         {
-            Angle--;
+            this.Angle--;
 
-            if(Angle < _minAngle)
+            if(this.Angle < this._minAngle)
             {
-                Angle = _minAngle;
+                this.Angle = this._minAngle;
             }
         }
     }
