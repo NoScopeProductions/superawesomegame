@@ -8,7 +8,7 @@ namespace ShooterGame.Projectile
     [RequireComponent(typeof(Rigidbody2D))]
     public class BaseProjectileController : PunBehaviour
     {
-        private const float POWER_CONSTANT = 100f;
+        private const float POWER_CONSTANT = 10f;
 
         private Vector2 _prevPosition;
         private Rigidbody2D _rigidbody;

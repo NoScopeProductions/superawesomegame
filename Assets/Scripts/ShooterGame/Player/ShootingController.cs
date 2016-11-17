@@ -9,8 +9,7 @@ namespace ShooterGame.Player
     [RequireComponent(typeof(AngleController))]
     public class ShootingController : PunBehaviour
     {
-        
-        private const float POWER_GAIN_PER_SECOND = 0.1f;
+        private const float POWER_GAIN_PER_SECOND = 1f;
         private const float MAX_POWER = 4.0f;
 
         public float _power;
@@ -60,7 +59,7 @@ namespace ShooterGame.Player
             var direction = Vector2.right.Rotate(angle).normalized;
 
             //TODO: set projectile position based on sprite/gun position
-            var projectilePosition = this.transform.position + Vector3.up;
+            var projectilePosition = this.transform.position + Vector3.up*0.4f;
             var projectile = PhotonNetwork.Instantiate(PrefabNames.BASE_PROJECTILE, projectilePosition, Quaternion.identity, 0);
 
             projectile.GetComponent<BaseProjectileController>().Shoot(direction, power);
