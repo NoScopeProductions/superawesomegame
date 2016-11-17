@@ -4,7 +4,7 @@ using ShooterGame.Extensions;
 using ShooterGame.Projectile;
 using UnityEngine;
 
-namespace ShooterGame.Player
+namespace ShooterGame.Player.Controllers
 {
     [RequireComponent(typeof(AngleController))]
     public class ShootingController : PunBehaviour

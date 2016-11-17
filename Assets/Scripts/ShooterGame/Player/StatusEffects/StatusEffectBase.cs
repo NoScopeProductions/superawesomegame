@@ -1,4 +1,6 @@
-﻿namespace ShooterGame.Player.StatusEffects
+﻿using ShooterGame.Player.Stats;
+
+namespace ShooterGame.Player.StatusEffects
 {
     public abstract class StatusEffectBase
     {

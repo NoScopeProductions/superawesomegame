@@ -2,7 +2,7 @@
 using JetBrains.Annotations;
 using UnityEngine;
 
-namespace ShooterGame.Player
+namespace ShooterGame.Player.Stats
 {
     [Serializable]
     public struct Stat

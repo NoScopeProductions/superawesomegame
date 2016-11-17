@@ -1,4 +1,5 @@
 ﻿using ShooterGame.Player;
+using ShooterGame.Player.Stats;
 using UnityEngine;
 
 namespace ShooterGame.Interfaces

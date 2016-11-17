@@ -1,9 +1,9 @@
-﻿using UnityEngine;
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using ShooterGame.Interfaces;
 using ShooterGame.Managers;
+using UnityEngine;
 
-namespace ShooterGame.Player
+namespace ShooterGame.Player.Stats
 {
     public class Weapon : MonoBehaviour
     {

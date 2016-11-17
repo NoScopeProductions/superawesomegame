@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using JetBrains.Annotations;
 using ShooterGame.Player;
+using ShooterGame.Player.Stats;
 
 namespace ShooterGame.UI
 {

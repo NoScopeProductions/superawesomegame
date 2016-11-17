@@ -3,9 +3,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ShooterGame.Player
+namespace ShooterGame.Player.Controllers
 {
-
     [RequireComponent(typeof(BoxCollider2D), typeof(Rigidbody2D))]
     public class CharacterController2D : MonoBehaviour
     {

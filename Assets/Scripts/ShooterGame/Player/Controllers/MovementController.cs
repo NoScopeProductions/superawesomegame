@@ -1,7 +1,7 @@
 ﻿using Photon;
 using UnityEngine;
 
-namespace ShooterGame.Player
+namespace ShooterGame.Player.Controllers
 {
     [RequireComponent(typeof(CharacterController2D))]
     public class MovementController : PunBehaviour
@@ -12,7 +12,7 @@ namespace ShooterGame.Player
         [SerializeField] private readonly float _groundDamping = 20f; // how fast do we change direction? higher means faster
         [SerializeField] private readonly float _inAirDamping = 0f;
 
-        private float _normalizedHorizontalSpeed = 0;
+        private float _normalizedHorizontalSpeed;
 
         private CharacterController2D _controller;
         private Vector3 _velocity;
@@ -20,6 +20,7 @@ namespace ShooterGame.Player
         public void Awake()
         {
             this._controller = this.GetComponent<CharacterController2D>();
+            this._normalizedHorizontalSpeed = 0f;
         }
 
         public void Update()

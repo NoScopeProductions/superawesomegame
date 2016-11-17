@@ -1,8 +1,8 @@
-﻿using UnityEngine;
+﻿using JetBrains.Annotations;
 using Photon;
-using JetBrains.Annotations;
+using UnityEngine;
 
-namespace ShooterGame.Player
+namespace ShooterGame.Player.Controllers
 {
     public class AngleController : PunBehaviour
     {

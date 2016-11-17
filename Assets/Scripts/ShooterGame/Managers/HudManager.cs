@@ -2,6 +2,7 @@
 using JetBrains.Annotations;
 using ShooterGame.Constants;
 using ShooterGame.Player;
+using ShooterGame.Player.Stats;
 using ShooterGame.UI;
 using UnityEngine;
 using UnityEngine.UI;

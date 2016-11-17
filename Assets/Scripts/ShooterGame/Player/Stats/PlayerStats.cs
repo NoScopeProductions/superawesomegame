@@ -1,11 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
 using ShooterGame.Constants;
 using ShooterGame.Interfaces;
 using ShooterGame.Managers;
 using ShooterGame.Player.StatusEffects;
-using System.Collections.Generic;
+using UnityEngine;
 
-namespace ShooterGame.Player
+namespace ShooterGame.Player.Stats
 {
     public class PlayerStats : ADestructible
     {
