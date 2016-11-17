@@ -829,6 +829,30 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 223000011949012806, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd,
+        type: 2}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223000011949012806, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd,
+        type: 2}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223000011949012806, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 353381816}
+    - target: {fileID: 1000012207472568, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd, type: 2}
+      propertyPath: m_Name
+      value: UIRoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 223000011949012806, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd,
+        type: 2}
+      propertyPath: m_PlaneDistance
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000012095178360, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1e6f7e61f843be34a9fa3bb8acb96bcd, type: 2}
