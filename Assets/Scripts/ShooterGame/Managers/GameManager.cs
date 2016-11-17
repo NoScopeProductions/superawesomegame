@@ -33,22 +33,19 @@ namespace ShooterGame.Managers
             Instance = this;
         }
 
-        void Update()
-        {
-            if (Time.frameCount % 144 == 0)
-            {
-                Debug.Log("Turn Update");
-                this.OnTurnUpdate();
-            }
-        }
-
-        private void SpawnPlayer()
+       private void SpawnPlayer()
         {
             var player = PhotonNetwork.Instantiate(PrefabNames.PLAYER, Vector3.zero, Quaternion.identity, 0);
             HudManager.Instance.TrackPlayerStatus(player.GetComponent<PlayerStats>());
 
             player.layer = (int) Layer.Player;
             this.MainCamera.Target = player.transform;
+        }
+
+        public void BeginTurn(GameObject player)
+        {
+            this.MainCamera.Target = player.transform;
+            this.OnTurnUpdate(); //TODO: Should we send the player whose turn it is as an event parameter?
         }
     }
 }
