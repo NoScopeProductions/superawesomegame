@@ -25,15 +25,13 @@ using UnityEngine;
 [AddComponentMenu("Photon Networking/Photon Rigidbody 2D View")]
 public class PhotonRigidbody2DView : MonoBehaviour, IPunObservable
 {
-    [SerializeField]
-    bool m_SynchronizeVelocity = true;
+    [SerializeField] private bool m_SynchronizeVelocity = true;
 
-    [SerializeField]
-    bool m_SynchronizeAngularVelocity = true;
+    [SerializeField] private bool m_SynchronizeAngularVelocity = true;
 
-    Rigidbody2D m_Body;
+    private Rigidbody2D m_Body;
 
-    void Awake()
+    private void Awake()
     {
         this.m_Body = GetComponent<Rigidbody2D>();
     }

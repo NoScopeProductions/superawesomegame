@@ -27,29 +27,26 @@ public class PhotonTransformView : MonoBehaviour, IPunObservable
     //configure in the inspector while the control objects below are actually moving
     //the object and calculating all the inter- and extrapolation
 
-    [SerializeField]
-    PhotonTransformViewPositionModel m_PositionModel = new PhotonTransformViewPositionModel();
+    [SerializeField] private PhotonTransformViewPositionModel m_PositionModel = new PhotonTransformViewPositionModel();
 
-    [SerializeField]
-    PhotonTransformViewRotationModel m_RotationModel = new PhotonTransformViewRotationModel();
+    [SerializeField] private PhotonTransformViewRotationModel m_RotationModel = new PhotonTransformViewRotationModel();
 
-    [SerializeField]
-    PhotonTransformViewScaleModel m_ScaleModel = new PhotonTransformViewScaleModel();
+    [SerializeField] private PhotonTransformViewScaleModel m_ScaleModel = new PhotonTransformViewScaleModel();
 
-    PhotonTransformViewPositionControl m_PositionControl;
-    PhotonTransformViewRotationControl m_RotationControl;
-    PhotonTransformViewScaleControl m_ScaleControl;
+    private PhotonTransformViewPositionControl m_PositionControl;
+    private PhotonTransformViewRotationControl m_RotationControl;
+    private PhotonTransformViewScaleControl m_ScaleControl;
 
-    PhotonView m_PhotonView;
+    private PhotonView m_PhotonView;
 
-    bool m_ReceivedNetworkUpdate = false;
+    private bool m_ReceivedNetworkUpdate = false;
 
 	/// <summary>
 	/// Flag to skip initial data when Object is instantiated and rely on the first deserialized data instead.
 	/// </summary>
-	bool m_firstTake = false;
+	private bool m_firstTake = false;
 
-    void Awake()
+    private void Awake()
     {
         this.m_PhotonView = GetComponent<PhotonView>();
 
@@ -58,12 +55,12 @@ public class PhotonTransformView : MonoBehaviour, IPunObservable
         this.m_ScaleControl = new PhotonTransformViewScaleControl(this.m_ScaleModel);
     }
 
-	void OnEnable()
+    private void OnEnable()
 	{
 		m_firstTake = true;
 	}
 
-    void Update()
+    private void Update()
     {
         if (this.m_PhotonView == null || this.m_PhotonView.isMine == true || PhotonNetwork.connected == false)
         {
@@ -75,7 +72,7 @@ public class PhotonTransformView : MonoBehaviour, IPunObservable
         this.UpdateScale();
     }
 
-    void UpdatePosition()
+    private void UpdatePosition()
     {
         if (this.m_PositionModel.SynchronizeEnabled == false || this.m_ReceivedNetworkUpdate == false)
         {
@@ -85,7 +82,7 @@ public class PhotonTransformView : MonoBehaviour, IPunObservable
        	transform.localPosition = this.m_PositionControl.UpdatePosition(transform.localPosition);
     }
 
-    void UpdateRotation()
+    private void UpdateRotation()
     {
         if (this.m_RotationModel.SynchronizeEnabled == false || this.m_ReceivedNetworkUpdate == false)
         {
@@ -95,7 +92,7 @@ public class PhotonTransformView : MonoBehaviour, IPunObservable
         transform.localRotation = this.m_RotationControl.GetRotation(transform.localRotation);
     }
 
-    void UpdateScale()
+    private void UpdateScale()
     {
         if (this.m_ScaleModel.SynchronizeEnabled == false || this.m_ReceivedNetworkUpdate == false)
         {
@@ -156,7 +153,7 @@ public class PhotonTransformView : MonoBehaviour, IPunObservable
     //    DoDrawExtrapolatedPositionGizmo();
     //}
 
-    void DoDrawEstimatedPositionError()
+    private void DoDrawEstimatedPositionError()
     {
         Vector3 targetPosition = this.m_PositionControl.GetNetworkPosition();
 

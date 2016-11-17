@@ -25,29 +25,29 @@ namespace ShooterGame.Player.Stats
         private Weapon PrimaryWeapon { get; set; }
         private Weapon SecondaryWeapon { get; set; }
 
-        void Awake()
+        private void Awake()
         {
         }
 
-        void Start()
+        private void Start()
         {
             GameManager.Instance.OnTurnUpdate += this.TurnUpdate;
             this._hudManager = HudManager.Instance;
         }
 
-        void OnDestroy()
+        private void OnDestroy()
         {
             GameManager.Instance.OnTurnUpdate -= this.TurnUpdate;
         }
 
-        void Update()
+        private void Update()
         {
             this.HandleTestInputs();
             this._hudManager.ShowLoadout(this.PrimaryWeapon, this.SecondaryWeapon);
         }
 
         //todo - remove once turn and pvp mechanics are functional
-        void HandleTestInputs()
+        private void HandleTestInputs()
         {
             if (Input.GetButtonDown(Inputs.Temp_TakeDamage))
                 this.TakeDamage(10, this, this.transform.position);
@@ -80,12 +80,12 @@ namespace ShooterGame.Player.Stats
             this._statusEffects.Add(statusEffect);
         }
 
-        void AttackWithPrimary(IDestructible target)
+        private void AttackWithPrimary(IDestructible target)
         {
             this.PrimaryWeapon.Attack(target, this);
         }
 
-        void AttackWithSecondary(IDestructible target)
+        private void AttackWithSecondary(IDestructible target)
         {
             this.SecondaryWeapon.Attack(target, this);
         }

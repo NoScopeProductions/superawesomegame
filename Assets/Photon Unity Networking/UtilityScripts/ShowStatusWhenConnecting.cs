@@ -5,7 +5,7 @@ public class ShowStatusWhenConnecting : MonoBehaviour
 {
     public GUISkin Skin;
 
-    void OnGUI()
+    private void OnGUI()
     {
         if( Skin != null )
         {
@@ -30,7 +30,7 @@ public class ShowStatusWhenConnecting : MonoBehaviour
         }
     }
 
-    string GetConnectingDots()
+    private string GetConnectingDots()
     {
         string str = "";
         int numberOfDots = Mathf.FloorToInt( Time.timeSinceLevelLoad * 3f % 4 );

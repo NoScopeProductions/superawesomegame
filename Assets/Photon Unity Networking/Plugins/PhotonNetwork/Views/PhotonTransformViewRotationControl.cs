@@ -13,8 +13,8 @@ using System.Collections;
 
 public class PhotonTransformViewRotationControl 
 {
-    PhotonTransformViewRotationModel m_Model;
-    Quaternion m_NetworkRotation;
+    private PhotonTransformViewRotationModel m_Model;
+    private Quaternion m_NetworkRotation;
 
     public PhotonTransformViewRotationControl( PhotonTransformViewRotationModel model )
     {

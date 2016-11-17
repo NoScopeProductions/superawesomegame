@@ -56,7 +56,7 @@ public class PhotonView : Photon.MonoBehaviour
 {
     #if UNITY_EDITOR
     [ContextMenu("Open PUN Wizard")]
-    void OpenPunWizard()
+    private void OpenPunWizard()
     {
         EditorApplication.ExecuteMenuItem("Window/Photon Unity Networking");
     }
@@ -133,13 +133,12 @@ public class PhotonView : Photon.MonoBehaviour
     public OwnershipOption ownershipTransfer = OwnershipOption.Fixed;
 
     public List<Component> ObservedComponents;
-    Dictionary<Component, MethodInfo> m_OnSerializeMethodInfos = new Dictionary<Component, MethodInfo>(3);
+    private Dictionary<Component, MethodInfo> m_OnSerializeMethodInfos = new Dictionary<Component, MethodInfo>(3);
 
 #if UNITY_EDITOR
     // Suppressing compiler warning "this variable is never used". Only used in the CustomEditor, only in Editor
     #pragma warning disable 0414
-    [SerializeField]
-    bool ObservedComponentsFoldoutOpen = true;
+    [SerializeField] private bool ObservedComponentsFoldoutOpen = true;
     #pragma warning restore 0414
 #endif
 

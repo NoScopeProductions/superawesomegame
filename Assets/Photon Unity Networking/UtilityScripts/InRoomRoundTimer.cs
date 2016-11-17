@@ -89,7 +89,7 @@ public class InRoomRoundTimer : MonoBehaviour
     }
 
 
-    void Update()
+    private void Update()
     {
         if (startRoundWhenTimeIsSynced)
         {

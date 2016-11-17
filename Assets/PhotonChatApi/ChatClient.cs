@@ -37,7 +37,7 @@ namespace ExitGames.Client.Photon.Chat
     /// </remarks>
     public class ChatClient : IPhotonPeerListener
     {
-        const int FriendRequestListMax = 1024;
+        private const int FriendRequestListMax = 1024;
         /// <summary>The address of last connected Name Server.</summary>
         public string NameServerAddress { get; private set; }
         /// <summary>The address of the actual chat server assigned from NameServer. Public for read only.</summary>

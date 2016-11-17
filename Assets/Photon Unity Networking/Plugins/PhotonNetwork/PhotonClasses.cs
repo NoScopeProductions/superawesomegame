@@ -940,7 +940,7 @@ internal class PunEvent
 /// \ingroup publicApi
 public class PhotonStream
 {
-    bool write = false;
+    private bool write = false;
     private Queue<object> writeData;
     private object[] readData;
     internal byte currentItem = 0; //Used to track the next item to receive.

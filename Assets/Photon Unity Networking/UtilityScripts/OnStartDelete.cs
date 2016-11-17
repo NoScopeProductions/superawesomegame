@@ -4,7 +4,7 @@ using UnityEngine;
 public class OnStartDelete : MonoBehaviour 
 {
 	// Use this for initialization
-	void Start()
+    private void Start()
     {
 		Destroy(this.gameObject);
 	}

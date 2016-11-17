@@ -10,7 +10,7 @@ namespace ShooterGame.Player.Controllers
     {
         #region internal types
 
-        struct CharacterRaycastOrigins
+        private struct CharacterRaycastOrigins
         {
             public Vector3 _topLeft;
             public Vector3 _bottomRight;
@@ -59,8 +59,7 @@ namespace ShooterGame.Player.Controllers
         public bool _ignoreOneWayPlatformsThisFrame;
 
         [SerializeField]
-        [Range(0.001f, 0.3f)]
-        float _skinWidth = 0.02f;
+        [Range(0.001f, 0.3f)] private float _skinWidth = 0.02f;
 
         /// <summary>
         /// defines how far in from the edges of the collider rays are cast from. If cast with a 0 extent it will often result in ray hits that are
@@ -91,8 +90,7 @@ namespace ShooterGame.Player.Controllers
         /// mask with all layers that should act as one-way platforms. Note that one-way platforms should always be EdgeCollider2Ds. This is because it does not support being
         /// updated anytime outside of the inspector for now.
         /// </summary>
-        [SerializeField]
-        LayerMask _oneWayPlatformMask = 0;
+        [SerializeField] private LayerMask _oneWayPlatformMask = 0;
 
         /// <summary>
         /// the max slope angle that the CC2D can climb
@@ -123,7 +121,7 @@ namespace ShooterGame.Player.Controllers
         /// this is used to calculate the downward ray that is cast to check for slopes. We use the somewhat arbitrary value 75 degrees
         /// to calculate the length of the ray that checks for slopes.
         /// </summary>
-        float _slopeLimitTangent = Mathf.Tan(75f * Mathf.Deg2Rad);
+        private float _slopeLimitTangent = Mathf.Tan(75f * Mathf.Deg2Rad);
 
 
         [HideInInspector]
@@ -144,7 +142,7 @@ namespace ShooterGame.Player.Controllers
         public Vector3 _velocity;
         public bool IsGrounded { get { return this._collisionState._below; } }
 
-        const float K_SKIN_WIDTH_FLOAT_FUDGE_FACTOR = 0.001f;
+        private const float K_SKIN_WIDTH_FLOAT_FUDGE_FACTOR = 0.001f;
 
         #endregion
 
@@ -152,12 +150,12 @@ namespace ShooterGame.Player.Controllers
         /// <summary>
         /// holder for our raycast origin corners (TR, TL, BR, BL)
         /// </summary>
-        CharacterRaycastOrigins _raycastOrigins;
+        private CharacterRaycastOrigins _raycastOrigins;
 
         /// <summary>
         /// stores our raycast hit during movement
         /// </summary>
-        RaycastHit2D _raycastHit;
+        private RaycastHit2D _raycastHit;
 
         /// <summary>
         /// stores any raycast hits that occur this frame. we have to store them in case we get a hit moving
@@ -166,8 +164,8 @@ namespace ShooterGame.Player.Controllers
         private readonly List<RaycastHit2D> _raycastHitsThisFrame = new List<RaycastHit2D>(2);
 
         // horizontal/vertical movement data
-        float _verticalDistanceBetweenRays;
-        float _horizontalDistanceBetweenRays;
+        private float _verticalDistanceBetweenRays;
+        private float _horizontalDistanceBetweenRays;
 
         // we use this flag to mark the case where we are travelling up a slope and we modified our delta.y to allow the climb to occur.
         // the reason is so that if we reach the end of the slope we can make an adjustment to stay grounded
@@ -176,7 +174,7 @@ namespace ShooterGame.Player.Controllers
 
         #region Monobehaviour
 
-        void Awake()
+        private void Awake()
         {
             // add our one-way platforms to our normal platform mask so that we can land on them from above
             this._platformMask |= this._oneWayPlatformMask;
@@ -223,7 +221,7 @@ namespace ShooterGame.Player.Controllers
 
 
         [System.Diagnostics.Conditional("DEBUG_CC2D_RAYS")]
-        void DrawRay(Vector3 start, Vector3 dir, Color color)
+        private void DrawRay(Vector3 start, Vector3 dir, Color color)
         {
             Debug.DrawRay(start, dir, color);
         }
@@ -326,7 +324,7 @@ namespace ShooterGame.Player.Controllers
         /// resets the raycastOrigins to the current extents of the box collider inset by the skinWidth. It is inset
         /// to avoid casting a ray from a position directly touching another collider which results in wonky normal data.
         /// </summary>
-        void PrimeRaycastOrigins()
+        private void PrimeRaycastOrigins()
         {
             // our raycasts need to be fired from the bounds inset by the skinWidth
             var modifiedBounds = this._boxCollider.bounds;
@@ -344,7 +342,7 @@ namespace ShooterGame.Player.Controllers
         /// we have to increase the ray distance skinWidth then remember to remove skinWidth from deltaMovement before
         /// actually moving the player
         /// </summary>
-        void MoveHorizontally(ref Vector3 deltaMovement)
+        private void MoveHorizontally(ref Vector3 deltaMovement)
         {
             var isGoingRight = deltaMovement.x > 0;
             var rayDistance = Mathf.Abs(deltaMovement.x) + this._skinWidth;
@@ -406,7 +404,7 @@ namespace ShooterGame.Player.Controllers
         /// <returns><c>true</c>, if horizontal slope was handled, <c>false</c> otherwise.</returns>
         /// <param name="deltaMovement">Delta movement.</param>
         /// <param name="angle">Angle.</param>
-        bool HandleHorizontalSlope(ref Vector3 deltaMovement, float angle)
+        private bool HandleHorizontalSlope(ref Vector3 deltaMovement, float angle)
         {
             // disregard 90 degree angles (walls)
             if (Mathf.RoundToInt(angle) == 90)
@@ -461,7 +459,7 @@ namespace ShooterGame.Player.Controllers
         }
 
 
-        void MoveVertically(ref Vector3 deltaMovement)
+        private void MoveVertically(ref Vector3 deltaMovement)
         {
             var isGoingUp = deltaMovement.y > 0;
             var rayDistance = Mathf.Abs(deltaMovement.y) + this._skinWidth;

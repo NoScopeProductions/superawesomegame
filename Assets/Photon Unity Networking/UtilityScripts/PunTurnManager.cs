@@ -122,12 +122,12 @@ public class PunTurnManager : PunBehaviour
 	/// <summary>
 	/// Register for Event Call from PhotonNetwork.
 	/// </summary>
-    void Start()
+	private void Start()
     {
         PhotonNetwork.OnEventCall = OnEvent;
     }
 
-	void Update()
+    private void Update()
 	{
 		if (Turn > 0 && this.IsOver && !_isOverCallProcessed)
 		{

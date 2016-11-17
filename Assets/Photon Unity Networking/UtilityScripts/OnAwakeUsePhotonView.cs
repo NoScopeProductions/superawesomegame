@@ -7,7 +7,7 @@ using System.Collections;
 public class OnAwakeUsePhotonView : Photon.MonoBehaviour {
 
     // tries to send an RPC as soon as this script awakes (e.g. immediately when instantiated)
-	void Awake() 
+    private void Awake() 
     {
         if (!this.photonView.isMine)
         {
@@ -19,7 +19,7 @@ public class OnAwakeUsePhotonView : Photon.MonoBehaviour {
 	}
 
     // tries to send an RPC as soon as this script starts (e.g. immediately when instantiated)
-    void Start()
+    private void Start()
     {
         if (!this.photonView.isMine)
         {

@@ -13,7 +13,7 @@ namespace ShooterGame.UI
         private PlayerStats _player;
 
         [UsedImplicitly]
-        void Update()
+        private void Update()
         {
             this.TrackPlayer();
             this._healthBar.ShowStat(this._player.Health);

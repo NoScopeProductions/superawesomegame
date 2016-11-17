@@ -13,8 +13,8 @@ using System.Collections;
 
 public class PhotonTransformViewScaleControl 
 {
-    PhotonTransformViewScaleModel m_Model;
-    Vector3 m_NetworkScale = Vector3.one;
+    private PhotonTransformViewScaleModel m_Model;
+    private Vector3 m_NetworkScale = Vector3.one;
 
     public PhotonTransformViewScaleControl( PhotonTransformViewScaleModel model )
     {

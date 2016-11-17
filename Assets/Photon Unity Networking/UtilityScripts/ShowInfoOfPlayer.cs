@@ -17,7 +17,7 @@ public class ShowInfoOfPlayer : Photon.MonoBehaviour
     public Font font;
     public bool DisableOnOwnObjects;
 
-    void Start()
+    private void Start()
     {
         if (font == null)
         {
@@ -48,7 +48,7 @@ public class ShowInfoOfPlayer : Photon.MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
         bool showInfo = !this.DisableOnOwnObjects || this.photonView.isMine;
         if (textGo != null)

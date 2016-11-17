@@ -842,7 +842,8 @@ public static class PhotonNetwork
 
 	/// <summary>If true, PUN will use a Stopwatch to measure time since start/connect. This is more precise than the Environment.TickCount used by default.</summary>
     private static bool UsePreciseTimer = false;
-    static Stopwatch startupStopwatch;
+
+    private static Stopwatch startupStopwatch;
 
     /// <summary>
     /// Defines how long PUN keeps running a "fallback thread" to keep the connection after Unity's OnApplicationPause(true) call.

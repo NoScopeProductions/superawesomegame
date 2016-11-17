@@ -9,7 +9,7 @@ public class OnClickInstantiate : MonoBehaviour
 
     public bool showGui;
 
-    void OnClick()
+    private void OnClick()
     {
         if (!PhotonNetwork.inRoom)
         {
@@ -28,7 +28,7 @@ public class OnClickInstantiate : MonoBehaviour
         }
     }
 
-    void OnGUI()
+    private void OnGUI()
     {
         if (showGui)
         {

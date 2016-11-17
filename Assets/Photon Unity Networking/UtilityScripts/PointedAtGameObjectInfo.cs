@@ -4,7 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(InputToEvent))]
 public class PointedAtGameObjectInfo : MonoBehaviour 
 {
-    void OnGUI()
+    private void OnGUI()
     {
         if (InputToEvent.goPointedAt != null)
         {
