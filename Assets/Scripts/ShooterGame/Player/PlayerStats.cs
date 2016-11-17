@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
-using JetBrains.Annotations;
 using ShooterGame.Constants;
 using ShooterGame.Interfaces;
 using ShooterGame.Managers;
 using ShooterGame.Player.StatusEffects;
 using System.Collections.Generic;
-using ShooterGame.UI;
 
 namespace ShooterGame.Player
 {
@@ -13,120 +11,117 @@ namespace ShooterGame.Player
     {
         public delegate void PlayerStatsEvent(PlayerStats playerStats);
 
-        public PlayerStatsEvent OnDie, OnTakeDamage, OnHeal;
+        public event PlayerStatsEvent OnDie = p => { };
+        //public event PlayerStatsEvent OnTakeDamage = p => { };
+        //public event PlayerStatsEvent OnHeal = p => { };
 
         [SerializeField] private Stat _shields;
 
-        private Weapon _primary, _secondary;
-        private HUD _hud;
+        private HudManager _hudManager;
 
         private readonly List<StatusEffectBase> _statusEffects = new List<StatusEffectBase>();
         
-        public Stat   Shields         { get { return _shields;   } }
-        public Weapon PrimaryWeapon   { get { return _primary;   } }
-        public Weapon SecondaryWeapon { get { return _secondary; } }
+        public Stat   Shields         { get { return this._shields;   } }
+        private Weapon PrimaryWeapon { get; set; }
+        private Weapon SecondaryWeapon { get; set; }
 
-        [UsedImplicitly]
         void Awake()
         {
         }
 
-        [UsedImplicitly]
         void Start()
         {
-            GameManager.Instance.OnTurnUpdate += TurnUpdate;
-            _hud = HUD.Instance;
+            GameManager.Instance.OnTurnUpdate += this.TurnUpdate;
+            this._hudManager = HudManager.Instance;
         }
 
-        [UsedImplicitly]
         void OnDestroy()
         {
-            GameManager.Instance.OnTurnUpdate -= TurnUpdate;
+            GameManager.Instance.OnTurnUpdate -= this.TurnUpdate;
         }
 
-        [UsedImplicitly]
         void Update()
         {
-            HandleTestInputs();
-            _hud.ShowLoadout(_primary, _secondary);
+            this.HandleTestInputs();
+            this._hudManager.ShowLoadout(this.PrimaryWeapon, this.SecondaryWeapon);
         }
 
         //todo - remove once turn and pvp mechanics are functional
         void HandleTestInputs()
         {
             if (Input.GetButtonDown(Inputs.Temp_TakeDamage))
-                TakeDamage(10, this, transform.position);
+                this.TakeDamage(10, this, this.transform.position);
 
             if (Input.GetButtonDown(Inputs.Temp_Heal))
-                Heal(10, this);
+                this.Heal(10, this);
 
             if (Input.GetButtonDown(Inputs.Temp_RecoverShields))
-                RecoverShields(10);
+                this.RecoverShields(10);
         }
 
-        void TurnUpdate()
+        private void TurnUpdate()
         {
-            _statusEffects.ForEach(se => se.ApplyStatusEffect());
-            _statusEffects.RemoveAll(se => se.Duration == 0);
+            this._statusEffects.ForEach(se => se.ApplyStatusEffect());
+            this._statusEffects.RemoveAll(se => se.Duration == 0);
         }
 
         public void Equip(Weapon weapon)
         {
-            _primary = weapon;
+            this.PrimaryWeapon = weapon;
         }
 
         public void EquipSecondary(Weapon weapon)
         {
-            _secondary = weapon;
+            this.SecondaryWeapon = weapon;
         }
 
         public void AddStatusEffect(StatusEffectBase statusEffect)
         {
-            _statusEffects.Add(statusEffect);
+            this._statusEffects.Add(statusEffect);
         }
 
         void AttackWithPrimary(IDestructible target)
         {
-            _primary.Attack(target, this);
+            this.PrimaryWeapon.Attack(target, this);
         }
 
         void AttackWithSecondary(IDestructible target)
         {
-            _secondary.Attack(target, this);
+            this.SecondaryWeapon.Attack(target, this);
         }
 
         #region IDestructible implementation
         public override void TakeDamage(float amount, PlayerStats attacker, Vector2 pointOfContact)
         {
             Debug.Log("Taking Damage");
-            float damageAfterShields = _shields.Value - amount;
+            float damageAfterShields = this._shields.Value - amount;
 
-            if(_shields.Value > 0)
-                _shields.AddValue(-amount);
+            if(this._shields.Value > 0)
+                this._shields.Value -= amount;
 
             if(damageAfterShields < 0)
-                _health.AddValue(damageAfterShields);
+                this._health.Value += damageAfterShields;
 
-            if (_health.Value <= 0f)
-                Die();
+            if (this._health.Value <= 0f)
+                this.Die();
         }
         #endregion
 
         public void Heal(float amount, PlayerStats healer)
         {
-            _health.AddValue(amount);
+            this._health.Value += amount;
         }
 
         public void RecoverShields(float amount)
         {
-            _shields.AddValue(amount);
+            this._shields.Value += amount;
         }
 
         private void Die()
         {
             Debug.Log("He's dead, Jim.");
-            OnDie(this);
-            Destroy(gameObject);
+            this.OnDie(this);
+            Destroy(this.gameObject);
         }
     }
 }

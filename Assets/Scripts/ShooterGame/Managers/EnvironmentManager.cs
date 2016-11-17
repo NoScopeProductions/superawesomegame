@@ -11,21 +11,16 @@ namespace ShooterGame.Managers
 
         public Vector2 WindForce { get; private set; }
 
-        private HUD _hud;
+        private HudManager _hudManager;
 
         private void Awake()
         {
-            if (!Instance)
-                Instance = this;
-            else if (Instance != this)
-                Destroy(this.gameObject);
-
-            DontDestroyOnLoad(this.gameObject);
+            Instance = this;
         }
 
         private void Start()
         {
-            this._hud = HUD.Instance;
+            this._hudManager = HudManager.Instance;
             this.UpdateWind();
         }
 
@@ -43,7 +38,7 @@ namespace ShooterGame.Managers
 
             this.WindForce *= (int)Random.Range(0, MAX_WIND_FORCE);
 
-            this._hud.ShowWind(this.WindForce);
+            this._hudManager.ShowWind(this.WindForce);
         }
 
       

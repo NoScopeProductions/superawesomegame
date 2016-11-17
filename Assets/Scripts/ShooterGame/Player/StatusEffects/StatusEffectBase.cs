@@ -5,20 +5,20 @@
         private readonly int _maxDuration;
         private PlayerStats _player;
 
-        public string Name { get; protected set; }  //# name for HUD
-        public int Duration { get; protected set; } //# of turns left
-        public int MaxDuration { get { return _maxDuration; } }
+        private string Name { get; set; }  //# name for HUD
+        public int Duration { get; private set; } //# of turns left
+        public int MaxDuration { get { return this._maxDuration; } }
 
         protected StatusEffectBase(string name, int duration, PlayerStats affectedPlayer)
         {
-            Name = name;
-            _maxDuration = Duration = duration;
-            _player = affectedPlayer;
+            this.Name = name;
+            this._maxDuration = this.Duration = duration;
+            this._player = affectedPlayer;
         }
 
         public virtual void ApplyStatusEffect()
         {
-            Duration -= 1;
+            this.Duration -= 1;
         }
     }
 }

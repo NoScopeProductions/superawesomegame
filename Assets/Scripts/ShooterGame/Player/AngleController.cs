@@ -1,22 +1,21 @@
 ﻿using UnityEngine;
 using Photon;
-using System;
-
+using JetBrains.Annotations;
 
 namespace ShooterGame.Player
 {
     public class AngleController : PunBehaviour
     {
-        public float InputCooldown = 0.08f;
-        private float CurrentCooldown = 0f;
+        private const float INPUT_COOLDOWN = 0.08f;
+        private float _currentCooldown;
 
-        [SerializeField]
+        [SerializeField, UsedImplicitly]
         private int _minAngle;
 
-        [SerializeField]
+        [SerializeField, UsedImplicitly]
         private int _maxAngle;
 
-        [SerializeField]
+        [SerializeField] //TODO: Temporary so we can see the value in the inspector, once the HUD is in place we don't need to expose this variable and Angle can be an auto-property.
         private int _angle;
 
         public int Angle
@@ -25,12 +24,13 @@ namespace ShooterGame.Player
             private set { this._angle = value; }
         }
 
-        void Start()
+        private void Start()
         {
             this.Angle = (this._maxAngle - this._minAngle) / 2 + this._minAngle;
+            this._currentCooldown = 0f;
         }
 
-        void Update()
+        private void Update()
         {
             if (this.photonView.isMine == false && PhotonNetwork.connected) return;
             this.CheckInput();
@@ -39,27 +39,26 @@ namespace ShooterGame.Player
 
         private void DecreaseInputCooldown()
         {
-            this.CurrentCooldown -= Time.deltaTime;
-            if (this.CurrentCooldown <= 0)
+            this._currentCooldown -= Time.deltaTime;
+            if (this._currentCooldown <= 0)
             {
-                this.CurrentCooldown = 0f;
+                this._currentCooldown = 0f;
             }
         }
 
         private void CheckInput()
         {
-            if (this.CurrentCooldown <= 0f)
+            if (!(this._currentCooldown <= 0f)) return;
+
+            if (Input.GetKey(KeyCode.UpArrow))
             {
-                if (Input.GetKey(KeyCode.UpArrow))
-                {
-                    this.IncreaseAngle();
-                    this.CurrentCooldown = this.InputCooldown;
-                }
-                else if (Input.GetKey(KeyCode.DownArrow))
-                {
-                    this.DecreaseAngle();
-                    this.CurrentCooldown = this.InputCooldown;
-                }
+                this.IncreaseAngle();
+                this._currentCooldown = INPUT_COOLDOWN;
+            }
+            else if (Input.GetKey(KeyCode.DownArrow))
+            {
+                this.DecreaseAngle();
+                this._currentCooldown = INPUT_COOLDOWN;
             }
         }
 

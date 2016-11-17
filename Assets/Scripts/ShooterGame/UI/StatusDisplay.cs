@@ -14,24 +14,19 @@ namespace ShooterGame.UI
         [UsedImplicitly]
         void Update()
         {
-            TrackPlayer();
-            ShowStat(_healthBar, _player.Health);
-            ShowStat(_shieldBar, _player.Shields);
-        }
-
-        private void ShowStat(BarScript statusBar, Stat status)
-        {
-            statusBar.SetFillAmount(status.Value / status.MaxValue);
+            this.TrackPlayer();
+            this._healthBar.ShowStat(this._player.Health);
+            this._shieldBar.ShowStat(this._player.Shields);
         }
 
         public void AttachToPlayer(PlayerStats player)
         {
-            _player = player;
+            this._player = player;
         }
 
         private void TrackPlayer()
         {
-            transform.position = _player.transform.position + Vector3.up * 1.5f;
+            this.transform.position = this._player.transform.position + Vector3.up * 1.5f;
         }
     }
 }

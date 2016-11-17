@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using JetBrains.Annotations;
 using ShooterGame.Constants;
+using ShooterGame.Player;
 using UnityEngine.UI;
 
 namespace ShooterGame.UI
@@ -13,29 +14,27 @@ namespace ShooterGame.UI
         
         private float _parentWidth;
 
-        public HudBarType BarType { get { return _barType; } }
-        public float FillAmount { get { return _fillAmount; } }
+        public HudBarType BarType { get { return this._barType; } }
 
-        [UsedImplicitly]
-        void Awake()
+        public float FillAmount
         {
-            _parentWidth = _bar.GetComponentInParent<RectTransform>().rect.width;
+            get { return this._fillAmount; }
+            set { this._fillAmount = Mathf.Clamp(value, 0, 1); }
         }
 
-        // Update is called once per frame
-        [UsedImplicitly]
-        void Update()
+        private void Awake()
         {
-            _bar.rectTransform.sizeDelta = new Vector2(_fillAmount * _parentWidth,
-                                                       _bar.rectTransform.sizeDelta.y);
+            this._parentWidth = this._bar.GetComponentInParent<RectTransform>().rect.width;
         }
 
-        /// <summary>
-        /// Clamps the fill amount between 0 and 1
-        /// </summary>
-        public float SetFillAmount(float fillAmount)
+        private void Update()
         {
-            return _fillAmount = Mathf.Clamp(fillAmount, 0, 1);
+            this._bar.rectTransform.sizeDelta = new Vector2(this._fillAmount *this._parentWidth, this._bar.rectTransform.sizeDelta.y);
+        }
+
+        public void ShowStat(Stat status)
+        {
+            this.FillAmount = status.Value / status.MaxValue;
         }
     }
 }

@@ -12,40 +12,38 @@ namespace ShooterGame.Player
 
         private int _cooldown; //# of rounds left on cooldown
 
-        public float AttackPower  { get { return _attackPower;    } }
-        public int Cooldown       { get { return _cooldown;       } }
-        public int CooldownLength { get { return _cooldownLength; } }
+        public float AttackPower  { get { return this._attackPower;    } }
+        public int Cooldown       { get { return this._cooldown;       } }
+        public int CooldownLength { get { return this._cooldownLength; } }
 
-        [UsedImplicitly]
-        void Awake()
+        private void Awake()
         {
-            GameManager.Instance.OnTurnUpdate += TurnUpdate;
+            GameManager.Instance.OnTurnUpdate += this.TurnUpdate;
         }
 
-        [UsedImplicitly]
-        void OnDestroy()
+        private void OnDestroy()
         {
-            GameManager.Instance.OnTurnUpdate -= TurnUpdate;
+            GameManager.Instance.OnTurnUpdate -= this.TurnUpdate;
         }
 
         protected virtual void TurnUpdate()
         {
-            if (_cooldown > 0)
-                _cooldown -= 1;
+            if (this._cooldown > 0)
+                this._cooldown -= 1;
         }
 
         public virtual void Attack(IDestructible target, PlayerStats wielder)
         {
-            Use();
-            target.TakeDamage(_attackPower, wielder, wielder.transform.position);
+            this.Use();
+            target.TakeDamage(this._attackPower, wielder, wielder.transform.position);
         }
 
         public virtual bool Use()
         {
-            if (_cooldown > 0)
+            if (this._cooldown > 0)
                 return false;
 
-            _cooldown = _cooldownLength;
+            this._cooldown = this._cooldownLength;
             return true;
         }
     }
